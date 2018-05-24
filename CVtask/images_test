@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="./images_test_css.css" />
+	<title> images</title> 
+</head>
+<body>
+		<div class="row">
+			<div class='column'> <img src="./imgs/vienne1.jpg"> </div>
+			<div class='column'> <img src="./imgs/budapest1.jpg"> </div>
+			<div class='column'> <img src="./imgs/warsaw1.jpg"> </div>
+			<div class='column'> <img src="./imgs/zakopane1.jpg"> </div>
+		</div>
+</body>
+</html>
