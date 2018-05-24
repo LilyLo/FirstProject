@@ -1,11 +1,12 @@
 body {
-	color: #333;
-	font-family: Open Sans, sans-serif;
+    color: #333;
+    font-family: Open Sans, sans-serif;
+    margin:0;
 }
 
 #CVcontainer {
-	font-size: 14px;
-	background-color: #F6F6F6;
+    font-size: 14px;
+    background-color: #F6F6F6;
     padding: 20px;
     margin: 20px auto;
     min-width: 300px;
@@ -14,23 +15,23 @@ body {
 }
 
 header {
-	padding:0;
+    padding:0;
 }
 
 h2{
-	text-align: center;
+    text-align: center;
 }
 
 image {
-	float:left;
-	display: inline-block;
+    float:left;
+    display: inline-block;
 }
 
 #info {
-	padding: 0;
-	display: inline-block;
-	margin-left: 10px;
-	vertical-align: top;
+    padding: 0;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
 }
 
 div {
@@ -38,31 +39,53 @@ div {
 }
 
 .tab{
-	width: 100%;
-	border-top: 1px dotted #c0c0c0;
-	margin-bottom: 0px;
+    width: 100%;
+    border-top: 1px dotted #c0c0c0;
+    margin-bottom: 0px;
     position: relative;
 }
 
 .line {
-	border-bottom: 1px dotted #c0c0c0;
-	height: 70px;
+    border-bottom: 1px dotted #c0c0c0;
+    height: 70px;
 }
 
 .date {
-	width:20%;
-	height:100%;
-	float:left;
-	border-right: 1px dotted #c0c0c0;
+    width:20%;
+    height:100%;
+    float:left;
+    border-right: 1px dotted #c0c0c0;
 }
 
 .emplorer {
-	margin-left: 160px;
+    margin-left: 160px;
     vertical-align: top;
 }
 
+.row >.column {
+    padding:0 2px;
+    float: left;
+    width:25%;
+    box-sizing: border-box;
+}
+
+.row {
+    position:relative;
+    width:100%;
+}
+
+.column img {
+    width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #mypopup{
-	display: none; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -120,3 +143,4 @@ div {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
