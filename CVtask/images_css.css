@@ -18,13 +18,13 @@ body {
 }
 
 .column img{
-	  width:100%;
-      cursor: pointer;
-      border: 1px solid black;
+	width:100%;
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 .openpopup {
-    display: none; 
+    display: block; 
     position: fixed; 
     overflow: auto;
     z-index: 1; 
@@ -34,7 +34,11 @@ body {
     left: 0;
     top: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
+}
+
+.closepopup {
+    display: none;
 }
 
 .popup-content {
@@ -52,14 +56,32 @@ body {
     height: 600px; 
 }
 
+.arrows{
+    position: absolute;
+    top: 275px;
+    font-size: 50px;
+    font-weight: bold;    
+    color: white;
+    cursor: pointer;
+    background-color: Transparent;
+    border:none;
+}
+
+#left-arrow {
+    left: -50px;
+}
+
+#right-arrow{
+    right: -50px;
+}
 
 .close {
     position: absolute;
     top: 8px;
-    right: 16px;
+    right: -30px;
     height: 30px;
     font-size: 30px;
     font-weight: bold;    
-    color: #aaaaaa;
+    color: white;
     cursor: pointer;
 }
