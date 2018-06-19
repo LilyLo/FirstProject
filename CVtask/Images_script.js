@@ -8,6 +8,8 @@ var rightArrow = document.querySelector('#right-arrow');
 
 var leftArrow = document.querySelector('#left-arrow');
 
+var arrows = document.querySelectorAll('.inactive');
+
 var close = document.querySelector(".close");
 
 var originId;
@@ -39,9 +41,25 @@ rightArrow.onclick = function() {
 
 	var nextSrc = nextContainer.querySelector("img").getAttribute("src");
 
+		originId = nextContainer.querySelector("img").id;
        	popupImage.src = nextSrc;
      	openPopup();
 }			
+
+
+leftArrow.onclick = function() {
+
+	var currentContainer = document.getElementById(originId).parentElement;
+
+	var previousContainer = currentContainer.previousElementSibling;
+
+	var previousSrc = previousContainer.querySelector("img").getAttribute("src");
+
+		originId = previousContainer.querySelector("img").id;
+       	popupImage.src = previousSrc;
+     	openPopup();
+}			
+
 
 close.onclick = function() {
 	hidePopup();

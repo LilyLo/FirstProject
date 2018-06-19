@@ -75,6 +75,10 @@ body {
     right: -50px;
 }
 
+.inactive{
+     cursor: none;
+}
+
 .close {
     position: absolute;
     top: 8px;
