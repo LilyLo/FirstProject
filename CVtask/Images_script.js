@@ -32,13 +32,14 @@ for (var i = 0; i < imageContainer.length; i++) {
 }
 
 rightArrow.onclick = function() {
+
 	var currentContainer = document.getElementById(originId).parentElement;
 
-	currentContainer.id = "currentContainer";
+	var nextContainer = currentContainer.nextElementSibling;
 
-	var containerNumber = imageContainer.map(function(x) {return x.id; }).indexOf("currentContainer");
+	var nextSrc = nextContainer.querySelector("img").getAttribute("src");
 
-       	popupImage.src = imgsrc;
+       	popupImage.src = nextSrc;
      	openPopup();
 }			
 
